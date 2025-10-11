@@ -24,4 +24,6 @@ vite.config.ts.timestamp-*
 
 # pocketbase
 pb/pocketbase
+pb/pb_data
+pb/pb_data/*
 pb/LICENSE.md
