@@ -1,4 +1,4 @@
-import client from '$lib/pb';
+import type PocketBase from 'pocketbase';
 
 type GetItemList = {
 	filters?: {
@@ -10,7 +10,7 @@ type GetItemList = {
 	itemsPerPage?: number;
 };
 
-export async function getExamplesList<T>(input?: GetItemList) {
+export async function getExamplesList<T>(client: PocketBase, input?: GetItemList) {
 	try {
 		/**TODO: filters */
 

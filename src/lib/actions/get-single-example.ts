@@ -1,6 +1,6 @@
-import client from '$lib/pb';
+import type PocketBase from 'pocketbase';
 
-export async function getItemFromSlug<T>(slug: string | null) {
+export async function getItemFromSlug<T>(client: PocketBase, slug: string | null) {
 	try {
 		const list = await client
 			.collection<T | undefined>('blog') //use Pick to restrict type
