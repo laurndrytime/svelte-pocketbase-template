@@ -3,7 +3,7 @@
 1. clone this repo
 2. put pocketbase file inside `pb` folder
 3. install
-4. run
+4. run using `./pocketbase serve` inside `pb` folder
 
 # Pocketbase Setup
 
